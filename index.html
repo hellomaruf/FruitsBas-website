@@ -16,7 +16,7 @@
     <!-- navbar -->
     <div class="navbar bg-base-100 max-w-7xl mx-auto">
       <div class="flex-1">
-        <a class="font-bold text-3xl text-purple-800"
+        <a class="font-bold text-3xl text-purple-700"
           >Fruits<span class="font-normal">Bas</span></a
         >
       </div>
@@ -88,24 +88,131 @@
     </div>
 
     <!-- Cart section -->
-    <div class="max-w-7xl mx-auto">
-      <div class="">
+    <div class="max-w-7xl mx-auto flex gap-5 pt-12">
+      <!-- cards -->
+      <div class="grid grid-cols-3 gap-7">
+        <!-- card -->
         <div class="card bg-base-100 shadow-xl">
           <figure>
             <img src="assets/fruit1.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 class="card-title">Black beri!</h2>
+            <p class="text-xl font-semibold text-orange-600">Price: 120 $</p>
+            <p class="text-xl">Categori: Fruits</p>
             <div class="card-actions w-full">
               <button class="btn bg-purple-600 text-white w-full">
-                Buy Now
+                Add to Card
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img src="assets/fruit2.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Dragon Fruits!</h2>
+            <p class="text-xl font-semibold text-orange-600">Price: 110 $</p>
+            <p class="text-xl">Categori: Fruits</p>
+            <div class="card-actions w-full">
+              <button class="btn bg-purple-600 text-white w-full">
+                Add to Card
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img src="assets/fruit3.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Lemon!</h2>
+            <p class="text-xl font-semibold text-orange-600">Price: 40 $</p>
+            <p class="text-xl">Categori: Fruits</p>
+            <div class="card-actions w-full">
+              <button class="btn bg-purple-600 text-white w-full">
+                Add to Card
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img src="assets/fruit4.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Grapes!</h2>
+            <p class="text-xl font-semibold text-orange-600">Price: 70 $</p>
+            <p class="text-xl">Categori: Fruits</p>
+            <div class="card-actions w-full">
+              <button class="btn bg-purple-600 text-white w-full">
+                Add to Card
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img src="assets/fruit5.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Strawberry!</h2>
+            <p class="text-xl font-semibold text-orange-600">Price: 100 $</p>
+            <p class="text-xl">Categori: Fruits</p>
+            <div class="card-actions w-full">
+              <button class="btn bg-purple-600 text-white w-full">
+                Add to Card
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img src="assets/fruit6.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">orange!</h2>
+            <p class="text-xl font-semibold text-orange-600">Price: 90 $</p>
+            <p class="text-xl">Categori: Fruits</p>
+            <div class="card-actions w-full">
+              <button class="btn bg-purple-600 text-white w-full">
+                Add to Card
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div class=""></div>
+      <div class="text-center">
+        <div class="p-4 bg-purple-100 rounded-xl shadow-lg">
+          <h1 class="font-bold text-2xl pb-3">My Cart</h1>
+          <hr class="" />
+          <div class="flex justify-around py-3">
+            <div><h2 class="font-semibold text-lg">Name</h2></div>
+            <div><h2 class="font-semibold text-lg">Price</h2></div>
+            <div><h2 class="font-semibold text-lg">Category</h2></div>
+          </div>
+          <hr />
+          <div class="font-semibold text-xl pt-3">
+            Total Cost: <span>0</span>$
+          </div>
+          <div class="join py-4">
+            <input
+              class="input input-bordered join-item"
+              placeholder="Coupon Code"
+            />
+            <button class="btn join-item bg-purple-600 text-white">
+              Apply
+            </button>
+          </div>
+          <div class="font-semibold text-xl">Grand Total: <span>0</span>$</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
