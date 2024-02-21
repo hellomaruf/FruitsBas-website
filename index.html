@@ -14,7 +14,8 @@
   </head>
   <body>
     <!-- navbar -->
-    <div class="navbar bg-base-100 max-w-7xl mx-auto">
+
+    <div class="navbar bg-white z-10 fixed px-16">
       <div class="flex-1">
         <a class="font-bold text-3xl text-purple-700"
           >Fruits<span class="font-normal">Bas</span></a
@@ -22,10 +23,13 @@
       </div>
       <div class="flex-none">
         <div class="font-semibold text-xl pr-7">
-          <h1>Budget: <span>0</span>$</h1>
+          <h1>
+            Budget:
+            <span class=""> 400</span>$
+          </h1>
         </div>
         <div class="font-semibold text-xl pr-7">
-          <h1>Left: <span>0</span>$</h1>
+          <h1>Left: <span id="left"> 6</span></h1>
         </div>
         <div class="dropdown dropdown-end">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -44,7 +48,11 @@
                   d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                 />
               </svg>
-              <span class="badge badge-sm indicator-item">8</span>
+              <span
+                id="add-items"
+                class="badge bg-purple-600 text-white badge-sm indicator-item"
+                >0</span
+              >
             </div>
           </div>
           <div
@@ -52,7 +60,7 @@
             class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow"
           >
             <div class="card-body">
-              <span class="font-bold text-lg">8 Items</span>
+              <span class="font-bold text-lg">0 Items</span>
               <span class="text-info">Subtotal: $999</span>
               <div class="card-actions">
                 <button class="btn btn-primary btn-block">View cart</button>
@@ -88,7 +96,7 @@
     </div>
 
     <!-- Cart section -->
-    <div class="max-w-7xl mx-auto flex gap-5 pt-12">
+    <div class="max-w-7xl mx-auto flex gap-5 pt-32">
       <!-- cards -->
       <div class="grid grid-cols-3 gap-7">
         <!-- card -->
@@ -102,6 +110,7 @@
             <p class="text-xl">Categori: Fruits</p>
             <div class="card-actions w-full">
               <button
+              
                 class="add-to-cart-btn btn bg-purple-600 text-white w-full"
               >
                 Add to Card
@@ -212,8 +221,8 @@
             </div>
           </div>
           <hr />
-          <div class="font-semibold text-center  text-xl pt-3">
-            Total Cost: <span>0</span>$
+          <div class="font-semibold text-center text-xl pt-3">
+            Total Cost: <span id="total-price">0</span>$
           </div>
           <div class="join py-4">
             <input
@@ -224,7 +233,9 @@
               Apply
             </button>
           </div>
-          <div class="font-semibold text-center text-xl">Grand Total: <span>0</span>$</div>
+          <div class="font-semibold text-center text-xl">
+            Grand Total: <span id="grand-total">0</span>$
+          </div>
         </div>
       </div>
     </div>

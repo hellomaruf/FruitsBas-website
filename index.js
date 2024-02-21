@@ -1,4 +1,7 @@
 let counter = 0;
+let sumOfPrice = 0;
+let addItems = 0;
+let leftCount = 6;
 let addToCartBtn = document.getElementsByClassName("add-to-cart-btn");
 for (const button of addToCartBtn) {
   button.addEventListener("click", function () {
@@ -32,6 +35,27 @@ for (const button of addToCartBtn) {
     let p2 = document.createElement("p");
     p2.innerText = category;
     categoryDiv.appendChild(p2);
+
+    //   sum of price**********
+    sumOfPrice += price;
+    console.log(sumOfPrice);
+
+    let totalPrice = getValueById("total-price");
+    totalPrice.innerText = sumOfPrice;
+
+    // added grand total**********
+    let grandTotal = getValueById("grand-total");
+    grandTotal.innerText = sumOfPrice;
+
+    //   added items count*********
+    addItems++;
+    let addItemsNum = getValueById("add-items");
+    addItemsNum.innerText = addItems;
+
+    // added left count********
+    leftCount--;
+    let left = getValueById("left");
+    left.innerText = leftCount;
   });
 }
 
